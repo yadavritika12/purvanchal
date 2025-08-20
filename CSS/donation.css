@@ -1,0 +1,157 @@
+.hero-section {
+  background: url('/Images/blood/hero-blood.png') no-repeat center center/cover;
+  position: relative;
+  min-height: 80vh;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  /* semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section p,
+.hero-section h1 {
+  color: #fff;
+}
+
+.content-box {
+  background-color: #fff;
+}
+
+.underline {
+  width: 70px;
+  height: 3px;
+  background-color: #f06262;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.content-box ul li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content-box ul li span {
+  color: #e53935;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.image-box {
+  height: 100%;
+  max-height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+  object-fit: cover;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.image-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.image-box:hover .overlay {
+  opacity: 1;
+}
+
+.join-us {
+  position: relative;
+  background-image: url('/Images/blood/red-heart.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  z-index: 1;
+}
+
+.join-us .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* dark overlay for text visibility */
+  z-index: 2;
+}
+
+.join-us .content {
+  position: relative;
+  z-index: 3;
+}
+
+.small-title {
+  font-size: 1.2rem;
+  color: #f7f7f7;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: #f44336;
+  /* Red underline */
+}
+
+.campaign-gallery {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.campaign-gallery h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.campaign-gallery p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 10px;
+} 
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}

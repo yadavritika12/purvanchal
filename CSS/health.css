@@ -1,0 +1,88 @@
+.hero-section{
+    background-color: #c5c5c5;
+}
+.hero-section img{
+    height: 60vh;   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* about health check */
+
+.btn-teal {
+  background: #2bdac7;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-teal:hover {
+  background: #20c1b1;
+  color: #fff;
+}
+
+.icon-img {
+  width: 60px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.service-item:hover .icon-img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.service-item h5 {
+  margin-bottom: 8px;
+}
+
+.service-item p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.overlay-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay-box img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 50, 100, 0.75);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.overlay-box:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-box:hover .overlay-content {
+  transform: translateY(0%);
+}
+
+.overlay-content h5 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.overlay-content p {
+  margin: 0;
+  font-size: 14px;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto",'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #e6e8e98c;
+}
+.about-section {
+    background-color: #dce4e4;
+}
+
+.about-heading {
+    /* color: #007baf; */
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.7;
+}
+/* Animation keyframes */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation classes */
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+
+.quote-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* who we are */
+
+.mission-vision-section {
+    background-color: #fff;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: deepskyblue;
+}
+
+.bg-light-green {
+    background-color: #ebffe4;
+}
+
+.card-vision h4 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.card-vision p {
+    font-size: 0.95rem;
+}
+
+/* ✨ Hover effect for cards */
+.card-vision {
+    transition: all 0.3s ease;
+}
+
+.card-vision:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+

@@ -1,0 +1,70 @@
+.festival-section {
+  background-color: #f8f9fa;
+}
+
+.festival-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #d9252e;
+}
+
+.festival-text {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+}
+
+.timeline li {
+  margin-bottom: 30px;
+  padding-left: 25px;
+  border-left: 3px solid #dc3545;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #dc3545;
+  border-radius: 50%;
+}

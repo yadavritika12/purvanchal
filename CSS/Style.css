@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #d5dadb8c;
+}
+
+.navbar-brand img{
+    width: 80px;
+}
+
+.main-heading h5 {
+    font-size: 50px;
+    color: rgb(236, 234, 234);
+    font-weight: 700;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.top-header {
+    font-size: 25px;
+    background-color: #000000;
+    border-bottom: 1px solid #ffabab;
+    color: white;
+}
+
+.navbar {
+    background-color: #f5c543;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+/* Dropdown show on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Ensure it’s hidden by default */
+.dropdown-menu {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+
+.carousel-item {
+    transition: transform 4s ease-in-out, opacity 1s ease-in-out;
+}
+.carousel-item img {
+    height: 82dvh;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    width: 100%;
+}
+.Manually-Support{
+    background-color: lightgrey;
+}
+
+.suport-img img{
+    mix-blend-mode: color-burn;
+}
+.Support-text p{
+    font-size: 18px;
+    font-weight: 500;
+}
+/* who we are */
+.who-we{
+    background-image: url(/Images/back2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-items: end;
+    
+}
+.Activities{
+    background-color: #e1dede;
+}
+.whoimg2 {
+    position: absolute;
+    top: 117px;
+    left: 155px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+.whoimg1 {
+    transition: transform 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+.whoimg1:hover,
+.whoimg2:hover {
+    transform: scale(1.2);
+    z-index: 1;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+}
+
+.who-textsec h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.6;
+
+}
+.who-textsec hr{
+    width: 15%;
+    border-top-width: 4px;
+    color: #e02424;
+    opacity: 50;
+    margin: 0px;
+    
+}
+
+.who-textsec p {
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+
+.about {
+    border: none;
+    padding: 10px 20px;
+    background: rgb(8, 8, 76);
+    color: white;
+    border-radius: 10px;
+}
+
+.about:hover {
+    background: rgba(0, 34, 128, 0.458);
+}
+.who-textsec p{
+    width:600px;
+}
+/* .who-textsec{
+    background-image: url(/Images/back2.png);
+    opacity: 10;
+} */
+
+/* Our Activities section */
+.activities-section {
+    padding: 50px;
+}
+
+.text-section {
+    padding-right: 20px;
+}
+
+
+.image-grid img {
+    width: 100%;
+    object-fit: cover;
+   
+}
+.Activities-image {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.Activities-image:hover {
+    transform: scale(1.2) translateY(-10px); /* Shift the image up by 10px */
+    opacity: 0.9;
+}
+.Activities-text{
+    width: 400px;
+    padding-top: 30px;
+}
+.Activities-text hr{
+    width: 15%;
+    border-top-width: 4px;
+    color: #e02424;
+    opacity: 50;
+}
+.Activities-text .support-us{
+    background-color: #148fc4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.Activities-text .support-us:hover{
+    background-color:#00c3ff;
+    color: white;
+}
+
+ /* Carousel Container */
+ .honoured-section{
+    background-color: #d7edf5;
+ }
+ .awards-heading h1{
+    text-align: center;
+ }
+ .owl-carousel {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.owl-carousel .item {
+    background: #2a2828;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.owl-carousel .item:hover {
+    transform: scale(1.05);
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 10px;
+}
+
+.owl-carousel .item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #bbb9b9;
+    margin-top: 10px;
+}
+
+/* print media */
+
+ .print-m{
+    background-color: #d7edf5;
+ }
+ 
+.owl-carousel .print-image {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.owl-carousel .print-item {
+    /* background: #2a2828; */
+    /* padding: 10px; */
+    background-color: rgb(241, 237, 237);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.owl-carousel .print-item:hover {
+    transform: scale(1.05);
+}
+
+.owl-carousel .print-item img {
+    width: 100%; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover; 
+    border-radius: 5px;
+}
+/* .owl-carousel .print-item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #bbb9b9;
+    margin-top: 10px;
+} */
+
+/* contac t us */
+.contact-section{
+        background-color: rgb(230, 232, 232);
+    }
+    .section-line {
+        width: 40px;
+        height: 3px;
+        background-color: #000;
+    }
+
+    textarea.form-control {
+        resize: none;
+    }
+
+    .form-control,
+    .form-select {
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none !important;
+    }
+
+    button.btn-primary {
+        background-color: #031b4e;
+        border: none;
+        font-weight: 500;
+    }
+
+    button.btn-primary:hover {
+        background-color: #021232;
+    }
+
+/* ----Footer Section---- */
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+footer h6 {
+    font-weight: bold;
+    color: #0090d2;
+}
+
+.footer-logosec p {
+    font-size: 14px;
+    color: #e7d911;
+    text-align: justify;
+
+}
+
+footer a {
+    font-size: 14px;
+    color: #b1b1b1;
+    text-decoration: none;
+
+}
+
+.footer-service .text-light {
+    color: inherit;
+    transition: color 0.3s ease;
+
+}
+
+
+.btn-outline-light {
+    border: 1px solid #0090d2;
+    color: #0090d2;
+}
+
+.text-light {
+    position: relative;
+
+}
+
+.footer-service .text-light:hover::before {
+    width: 100%;
+}
+
+.footer-service .text-light::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:#0090d2;
+    transition: width 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #4e9cff;
+    color: white;
+}
+
+.footer-logosec img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}

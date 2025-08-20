@@ -1,0 +1,26 @@
+.hero-section{
+    background-color: #c5c5c5;
+}
+.hero-section img{
+    height: 40vh;   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.media-card img{
+    height: 250px;       /* Set desired height */
+    object-fit: cover;
+}
+.media-card .card-img-top {
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.media-card .card {
+    overflow: hidden; /* Prevent image from overflowing */
+}
+
+.media-card .card:hover .card-img-top {
+    transform: scale(1.1); /* Zoom effect */
+}
